@@ -16,8 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     deleteBtn.innerHTML = "x";
     item.append(deleteBtn);
     const deleteTodo = function () {
-      const li = document.querySelector("li");
-      li.remove();
+      item.remove()
     };
     deleteBtn.addEventListener("click", deleteTodo);
   };
